@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.shape {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<div id="john">
+Enter your name: <input id="name" class="important" type="text" onfocus="myFunction(this)">
+
+<p>When the input field gets focus, a function is triggered which changes the background-color.</p>
+
+</div>
+<script>
+function myFunction(x) {
+  if(x.classList.contains('important'))
+  x.classList.add("shape");
+  
+}
+</script>
+
+</body>
+</html>
